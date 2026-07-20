@@ -574,16 +574,22 @@
 
   function buildWhatsappMessage(teamA, teamB) {
     const order = ['Goleiro', 'Zagueiro', 'Lateral', 'Meio', 'Atacante'];
+    const siteName = "Sorteio do Racha";
+    const url = "https://luizgustavocosta.github.io/escalacao-racha/sorteio-times.html";
+    const sentence = `Visite o *${siteName}* no link para conferir: ${url}`;
+
     const listNames = (list) => [...list]
       .sort((a, b) => order.indexOf(a.position) - order.indexOf(b.position))
       .map(p => `${posLabel(p.position)}: ${p.name}`)
       .join('\n');
 
+
     return (
       `⚽ *Times do racha de hoje* ⚽\n\n` +
       `*Time Azul* 🔵\n${listNames(teamA.players)}\n\n` +
       `*Time Vermelho* 🔴\n${listNames(teamB.players)}\n\n` +
-      `Bom jogo! 🏆`
+      `Bom jogo! 🏆\n\n` +
+      sentence
     );
   }
 
