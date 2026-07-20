@@ -168,8 +168,8 @@
     height:14px;border-radius:8px;overflow:hidden;display:flex;
     border:1px solid var(--line);
   }
-  .balance-bar .side-a{background:var(--gold);}
-  .balance-bar .side-b{background:var(--grass);}
+  .balance-bar .side-a{background:darkblue;}
+  .balance-bar .side-b{background:darkred;}
   .balance-note{text-align:center;font-size:12px;color:var(--chalk-dim);margin-top:6px;}
 
   .teams-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
@@ -180,7 +180,7 @@
     border-radius:14px;
     padding:18px 18px 8px;
   }
-  .team-card.a{border-top:3px solid var(--gold);}
+  .team-card.a{border-top:3px solid var(--blue);}
   .team-card.b{border-top:3px solid var(--grass);}
   .team-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px;}
   .team-head h3{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:1px;margin:0;}
@@ -210,7 +210,7 @@
 <div class="app">
   <header>
     <img src="logo-nosso-racha.png" alt="Clube Monte Líbano - Nosso Racha 10 anos" class="logo">
-    <h1>Sorteio de Times</h1>
+    <h1>Sorteio dos craques 🏆</h1>
     <p>Monte a lista com 2 goleiros e 14 jogadores de linha — o sistema equilibra os times por posição e nível.</p>
   </header>
   <div class="field-line"></div>
@@ -273,14 +273,14 @@
     <div class="teams-grid">
       <div class="team-card a">
         <div class="team-head">
-          <h3>Time A</h3>
+          <h3>Time Azul 🔵</h3>
           <span class="team-avg" id="avgA"></span>
         </div>
         <ul class="team-players" id="teamAList"></ul>
       </div>
       <div class="team-card b">
         <div class="team-head">
-          <h3>Time B</h3>
+          <h3>Time Vermelho 🔴</h3>
           <span class="team-avg" id="avgB"></span>
         </div>
         <ul class="team-players" id="teamBList"></ul>
@@ -296,6 +296,7 @@
 
   <footer class="info">
     <strong>Como o sorteio funciona:</strong> os 2 goleiros vão um para cada time. Depois, para cada posição de linha (Zagueiro, Lateral, Meio, Atacante), os jogadores são distribuídos priorizando 1) manter a mesma quantidade da posição em cada time e 2) equilibrar o nível médio somado. Em caso de empate no nível, o sorteio usa aleatoriedade — então clicar em "Sortear times" de novo pode gerar uma combinação diferente, sempre respeitando o equilíbrio.
+    <p>&copy; 2026 Guga. Todos os direitos reservados.</p>
   </footer>
 </div>
 
@@ -580,8 +581,8 @@
 
     return (
       `⚽ *Times do racha de hoje* ⚽\n\n` +
-      `*Time A* 🔵\n${listNames(teamA.players)}\n\n` +
-      `*Time B* ⚪\n${listNames(teamB.players)}\n\n` +
+      `*Time Azul* 🔵\n${listNames(teamA.players)}\n\n` +
+      `*Time Vermelho* 🔴\n${listNames(teamB.players)}\n\n` +
       `Bom jogo! 🏆`
     );
   }
@@ -594,5 +595,7 @@
     renderResults(savedResult.teamA, savedResult.teamB);
   }
 </script>
+
 </body>
+
 </html>
