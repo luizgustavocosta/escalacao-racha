@@ -19,7 +19,7 @@ Cadastre os jogadores com nome, posição e nível, e o sistema monta dois times
 
 ## 🖥️ Como usar
 
-1. Abra o arquivo `sorteio-times.html` no navegador (ou acesse o link publicado, veja abaixo)
+1. Abra o arquivo `sorteio-times.html` no navegador (ou acesse o link publicado, veja abaixo). Será excluído em breve, e estará no lugar o index.html. Também está disponível na Vercel - https://escalacao-racha.vercel.app
 2. Cadastre os 16 jogadores (2 goleiros + 14 de linha)
 3. Clique em **"Sortear times"**
 4. Se quiser, clique em **"Enviar para o WhatsApp"** para compartilhar a escalação com o grupo
