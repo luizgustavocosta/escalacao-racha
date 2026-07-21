@@ -41,6 +41,7 @@ Cadastre os jogadores com nome, posição e nível, e o sistema monta dois times
 3. Salve — em alguns minutos o link fica disponível em:
    ```
    https://<seu-usuario>.github.io/<nome-do-repositorio>/sorteio-times.html
+   https://luizgustavocosta.github.io/escalacao-racha/
    ```
 
 ## 🔧 Tecnologias
